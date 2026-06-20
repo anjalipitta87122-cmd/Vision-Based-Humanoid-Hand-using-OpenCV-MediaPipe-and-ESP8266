@@ -1,0 +1,10 @@
+# Vision-Based-Humanoid-Hand-using-OpenCV-MediaPipe-and-ESP8266
+The robotic hand mirrors the user's finger movements captured through a webcam using MediaPipe hand landmark detection and OpenCV image processing. The processed gesture data is transmitted wirelessly to an ESP8266, which controls servo motors to replicate the finger movements in real time.
+The project 'Vision-based Humanoid Hand' uses computer vision with OpenCV, Hand Tracking with MediaPipe, and wireless communication with ESP8266 to achieve human gesture-controlled robotic hand system. It represents a combination of artificial intelligence, image processing techniques, embedded systems, and robotics technologies to create an intuitive way of human-computer interaction.
+
+In this system, the user's hand movement and position are tracked with a webcam that provides continuous recording of live video. Hand tracking library from MediaPipe detects 21 landmarks in real-time, which allows to recognize finger positions and movements. The frames of recorded video are further processed with OpenCV, and gesture information and current state of fingers are extracted from the video.
+
+The gesture data is transmitted wirelessly to ESP8266 NodeMCU via Wi-Fi. ESP8266 is responsible for receiving and interpreting finger positions data and generation of control signals to several servo motors mounted to the 3D-printed humanoid robotic hand.
+
+Each servo motor corresponds to one of fingers in the robotic hand. When the user bends, extends or move their fingers, the corresponding servos in the robotic hand mirror the same movements. It results in natural and responsive hand motions imitation without any contact devices or wearable sensors used by the user.
+This work is an application of robotics control through vision and can be used in various fields like robotic manipulation, development of artificial hands, teleoperation, human-robot interactions, rehabilitation engineering, and assistive technology. The system also lays the groundwork for further developments including gesture recognition, AI-driven controllers, implementation on ROS2, haptic devices, and robotic arms.
